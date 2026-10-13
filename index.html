@@ -10,6 +10,15 @@
 <style>
 :root{--bg:#02050c;--pn:#07111f;--ln:#123a63;--b:#1b8cff;--c:#25e4ff;--t:#eef6ff;--m:#9ab2cf}
 *{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:70px}
+<form name="apply" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="apply">
+  <p style="display:none"><input name="bot-field"></p>
+  <input type="text" name="name" placeholder="Full name" required>
+  <input type="tel" name="phone" placeholder="Phone" required>
+  <input type="email" name="email" placeholder="Email">
+  <textarea name="message" placeholder="Tell us about yourself"></textarea>
+  <button type="submit" class="btn">Apply</button>
+</form>
 body{background:var(--bg);color:var(--t);font:18px/1.55 Inter,system-ui,sans-serif;overflow-x:hidden}body.lock{overflow:hidden}
 img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
 :focus-visible{outline:3px solid var(--c);outline-offset:3px}
