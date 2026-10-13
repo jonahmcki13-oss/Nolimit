@@ -7,7 +7,22 @@
 <meta property="og:title" content="DME Fiber | More Than a Job"><meta property="og:description" content="Fiber sales, real team, room to lead. Apply in 60 seconds.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700;1,800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
+<style><style>
+form{color-scheme:dark}
+form input,form textarea{
+  width:100%;
+  padding:14px;
+  margin-bottom:12px;
+  background:var(--pn);
+  color:var(--t);
+  border:1px solid var(--ln);
+  border-radius:10px;
+  font:inherit;
+}
+form input::placeholder,form textarea::placeholder{color:#7d8aa0}
+form input:focus,form textarea:focus{outline:none;border-color:var(--c)}
+</style>
+
 :root{--bg:#02050c;--pn:#07111f;--ln:#123a63;--b:#1b8cff;--c:#25e4ff;--t:#eef6ff;--m:#9ab2cf}
 *{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:70px}
 <form name="apply" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
