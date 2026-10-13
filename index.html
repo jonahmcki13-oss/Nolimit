@@ -180,3 +180,17 @@ catch(x){er.textContent='That didn\u2019t send. Check your signal and tap again.
 /* sticky bar */
 (()=>{const s=document.getElementById('sc'),a=document.getElementById('apply');new IntersectionObserver(e=>s&&s.classList.toggle('hide',e[0].isIntersecting),{threshold:.1}).observe(a)})();
 </script></body></html>
+html, body {
+  background: #040a12 !important;
+  color: #fff;
+  color-scheme: dark;
+}
+
+/* Black text becoming white */
+header, nav { color: #fff; }
+h1, h2, h3, h4 { color: #fff; }
+
+/* Fade behind the bottom Apply button */
+[class*="sticky"], [class*="cta"], [class*="bottom"] {
+  background-image: linear-gradient(to top, #040a12 40%, rgba(4,10,18,0)) !important;
+}
